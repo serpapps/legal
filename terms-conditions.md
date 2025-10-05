@@ -1,7 +1,5 @@
 # Terms of Service
 
-_Last updated: September 19, 2025_
-
 These Terms of Service ("Terms") govern your access to and use of the software products, landing pages, and related services (collectively, the "Services") provided by SERP Apps and its affiliates ("Company", "we", "us", or "our"). By purchasing, downloading, installing, or otherwise using the Services, you agree to be bound by these Terms. If you do not agree, do not use the Services.
 
 ## 1. Eligibility & Account Responsibilities
@@ -10,12 +8,13 @@ You must be at least 18 years old, or the age of majority in your jurisdiction, 
 
 ## 2. License & Permitted Use
 
-Upon purchase, the Company grants you a non-exclusive, non-transferable, revocable license to install and use the software for your own internal business or personal purposes. You may not:
+Upon purchase, the Company grants you a non-exclusive, non-transferable, revocable license to install and use the software for your own internal business or personal purposes, subject to any license limits (e.g., number of users, domains, or installations) disclosed at the time of purchase.
 
-- Resell, redistribute, or sublicense the Services without prior written consent.
+You may not:
+- Resell, redistribute, share, or sublicense the license key or Services without prior written consent.
 - Reverse engineer, decompile, or attempt to derive the source code, except as permitted by applicable law.
 - Use the Services to engage in any unlawful, infringing, or harmful activity.
-- Circumvent technical restrictions or licensing controls imposed to protect the Services.
+- Circumvent, bypass, or attempt to bypass any licensing controls or technical restrictions implemented to protect the Services.
 
 ## 3. Payment & Renewals
 
@@ -23,7 +22,7 @@ All fees are due at the time of purchase unless explicitly stated otherwise on t
 
 ## 4. Refund Policy
 
-Refund requests are handled in accordance with our [Refund Policy](https://github.com/serpapps/legal/blob/main/refund-policy.md). Unless otherwise required by law, all sales are considered final once the license key or download link has been delivered.
+Refund requests are governed by our [Refund Policy](https://github.com/serpapps/legal/blob/main/refund-policy.md). Unless otherwise required by law, all sales are considered final once the license key or download link has been delivered.
 
 ## 5. Updates & Support
 
@@ -59,7 +58,28 @@ We may update these Terms from time to time by posting an updated version at the
 
 These Terms are governed by and construed in accordance with the laws of the State of California, without regard to its conflict-of-law principles. Any disputes arising under or in connection with the Services shall be resolved in the state or federal courts located in San Francisco County, California, and you consent to the personal jurisdiction of such courts.
 
-## 13. Contact Us
+## 13. Delivery of Digital Products
+
+Upon successful payment, a unique license key and access instructions will be delivered to the email address you provided at checkout. This includes:
+
+- Your license key
+- Download and installation instructions
+- Walkthrough videos
+- Multiple ways to contact our support team
+
+Delivery is considered complete once the email is successfully sent. It is your responsibility to ensure the accuracy and accessibility of your email address and to check spam/junk folders. We are not responsible for issues caused by incorrect email information or spam filtering.
+
+## 14. Chargebacks & Payment Disputes
+
+By purchasing our Services, you agree not to initiate chargebacks or payment disputes without first contacting our support team and giving us a chance to resolve any concerns.
+
+Unauthorized chargebacks may result in immediate suspension or termination of your license and access. We reserve the right to challenge disputes using proof of delivery, license issuance, and your acceptance of these Terms. We may also report chargeback abuse to fraud prevention databases or take legal action to recover costs.
+
+## 15. No Guarantee of Results
+
+While we aim to provide high-quality tools and support, we do not guarantee any specific outcomes or results through the use of our Services. Your results may vary depending on implementation, third-party changes, or external factors beyond our control.
+
+## 16. Contact Us
 
 If you have questions about these Terms or the Services, please contact us.
 
