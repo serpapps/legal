@@ -1,4 +1,5 @@
 # Legal Pages
 
-- [Terms & Conditions](https://github.com/serpapps/legal/blob/main/terms-conditions.md)
+- [Terms](https://github.com/serpapps/legal/blob/main/terms-conditions.md)
+- [DMCA](https://github.com/serpapps/legal/blob/main/dmca.md)
 - [Refund Policy](https://github.com/serpapps/legal/blob/main/refund-policy.md)
