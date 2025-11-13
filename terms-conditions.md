@@ -1,8 +1,19 @@
-# Terms of Service
+# Terms of Use
 
 _Last updated: November 2025_
 
 These Terms of Service ("Terms") govern your access to and use of the software products, landing pages, and related services (collectively, the "Services") provided by SERP Apps and its affiliates ("Company", "we", "us", or "our"). By purchasing, downloading, installing, or otherwise using the Services, you agree to be bound by these Terms. If you do not agree, do not use the Services.
+
+**These tools are for personal use only, download of copyrighted material is strictly prohibited, by using this website you agree to our Terms of Service. You are solely responsible for any copyright violations or misuse of this website.**
+
+- This website is intended for personal use only.
+- You may use our website as a recording service only and only as permitted by law.
+- You may not use our services to download or convert any copyrighted material.
+- Your are solely responsible for any misuse of these services and any copyright violations that may occur by using our website.
+- You are responsible for reading the terms of service of the websites you are downloading any media from, as you might be breaking their terms of service by using our services.
+- We are not to be held responsible for any misuse of the services provided on this website and any damages that might occur by using these services.
+- We reserve the right to amend these terms at any time.
+- Your continued use of this website constitutes your acceptance of these terms of service.
 
 
 ## 1. Eligibility & Account Responsibilities
