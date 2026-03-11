@@ -2,7 +2,7 @@
 
 All sales are final. We do not offer refunds on any products or services once a purchase is completed.
 
-Upon successful payment, a unique license key is automatically generated and sent to the email address you provided at checkout. This grants you immediate access to the software and includes:
+Upon successful payment the email address you provided at checkout is automatically sent confirmation information and granted access to the product you purchased. This grants you immediate access to the software and includes:
 
 - Instructions for downloading and installing the product
 - Walkthrough videos to help with setup
