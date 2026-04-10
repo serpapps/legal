@@ -1,0 +1,82 @@
+name: Add composer.json to all serpapps repos
+
+on:
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: 'Dry run (list repos only, make no changes)'
+        required: false
+        default: 'false'
+        type: choice
+        options:
+          - 'false'
+          - 'true'
+
+jobs:
+  add-composer-json:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - name: Add composer.json to every org repo
+        env:
+          GH_TOKEN: ${{ secrets.ORG_COMPOSER_TOKEN }}
+          DRY_RUN: ${{ inputs.dry_run }}
+          ORG: serpapps
+        run: |
+          set -euo pipefail
+
+          repos=$(gh repo list "$ORG" --limit 200 --json name,defaultBranchRef \
+            --jq '.[] | [.name, .defaultBranchRef.name] | @tsv')
+
+          echo "Repos found:"
+          echo "$repos" | awk '{print $1}'
+
+          if [ "$DRY_RUN" = "true" ]; then
+            echo "Dry run — exiting without making changes."
+            exit 0
+          fi
+
+          while IFS=$'\t' read -r repo default_branch; do
+            echo ""
+            echo "=== $ORG/$repo (branch: $default_branch) ==="
+
+            # Build a repo-specific composer.json
+            # Use the repo name as the Packagist slug and fetch the repo
+            # description for the "description" field.
+            description=$(gh repo view "$ORG/$repo" --json description --jq '.description // ""')
+
+            composer_json=$(jq -n \
+              --arg name "$ORG/$repo" \
+              --arg desc "$description" \
+              --arg homepage "https://github.com/$ORG/$repo" \
+              '{
+                name: $name,
+                description: $desc,
+                type: "library",
+                license: "MIT",
+                homepage: $homepage,
+                keywords: ["serpapps"],
+                support: { source: $homepage },
+                require: { php: ">=7.4" }
+              }')
+
+            # Check whether composer.json already exists on the default branch
+            if gh api "repos/$ORG/$repo/contents/composer.json" \
+                --silent 2>/dev/null; then
+              echo "  composer.json already exists — skipping."
+              continue
+            fi
+
+            encoded=$(echo "$composer_json" | base64 -w 0)
+
+            gh api \
+              --method PUT \
+              "repos/$ORG/$repo/contents/composer.json" \
+              --field message="chore: add composer.json for Packagist" \
+              --field content="$encoded" \
+              --field branch="$default_branch" \
+              --silent && echo "  ✓ composer.json committed." \
+              || echo "  ✗ Failed to commit composer.json."
+
+          done <<< "$repos"
