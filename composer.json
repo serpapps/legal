@@ -1,0 +1,14 @@
+{
+    "name": "serpapps/legal",
+    "description": "Legal pages for SerpApps including Terms, Privacy Policy, DMCA, Refund Policy, and Copyright Claims.",
+    "type": "library",
+    "license": "MIT",
+    "homepage": "https://github.com/serpapps/legal",
+    "keywords": ["legal", "terms", "privacy", "dmca", "refund", "copyright"],
+    "support": {
+        "source": "https://github.com/serpapps/legal"
+    },
+    "require": {
+        "php": ">=7.4"
+    }
+}
